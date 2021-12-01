@@ -85,19 +85,19 @@ function settime(){
    else if(W==11) wake.innerHTML=("Wake up time : "+(W)+" AM - "+(12)+"PM");
    else if(W>12) wake.innerHTML=("Wake up time : "+(W-12)+" PM - "+(W-11)+"PM");
    else if(W>0) wake.innerHTML=("Wake up time : "+(W)+" AM - "+(parseInt(W)+1)+"AM");
-   else wake.innerHTML=("Wake up time : default");
+   else wake.innerHTML=("Wake up time :      --      ");
     // lunch-time
    if(L==24) lunch.innerHTML=("Lunch time : "+(L-12)+" AM - "+(01)+"AM");
    else if(L==12) lunch.innerHTML=("Lunch time : "+(L)+" PM - "+"01PM");
    else if(L==11) lunch.innerHTML=("Lunch time : "+(L)+" AM - "+(12)+"PM");
    else if(L>12) lunch.innerHTML=("Lunch time : "+(L-12)+" PM - "+(L-11)+"PM");
    else if(L>0) lunch.innerHTML=("Lunch time : "+(L)+" AM - "+(parseInt(L)+1)+"AM");
-   else lunch.innerHTML=("Lunch time : default");
+   else lunch.innerHTML=("Lunch time :      --      ");
     // NAP-TIME
    if(N==24) nap.innerHTML=("Nap time : "+(N-12)+" AM - "+(01)+"AM");
    else if(N==12) nap.innerHTML=("Nap time : "+(N)+" PM - "+"01PM");
    else if(N==11) nap.innerHTML=("Nap time : "+(N)+" AM - "+(12)+"PM");
    else if(N>12) nap.innerHTML=("Nap time : "+(N-12)+" PM - "+(N-11)+"PM");
    else if(N>0)nap.innerHTML=("Nap time : "+(N)+" AM - "+(parseInt(N)+1)+"AM");
-   else nap.innerHTML=("Nap time : default");
+   else nap.innerHTML=("Nap time :      --      ");
 }
