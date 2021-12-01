@@ -69,6 +69,8 @@ function clock(){
 }
 setInterval(clock,1000);
 function settime(){
+
+    document.getElementById("salutation");
     var W=document.getElementById("wakeup_selector").value;
     var L=document.getElementById("lunch_selector").value;
     var N=document.getElementById("nap_selector").value;
