@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="e">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="icon" href="./LOGO.PNG">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="all.css">
+    <script src="all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main_container">
+    <div class="grid_container">
+        <div class="grid_box box1"></div>
+        <div class="grid_box box2">
+            <div class="box2_continaer">
+                    <div id="clock1" style="float: left;"><h2>TIME</h2></div>
+                    <div class="timer_box"><div id="hours" style="font-size:2rem;">00</div><p>hours</p></div>
+                    <div class="colon" style="font-size:2rem;color:#3d087b;">:</div>
+                    <div class="timer_box"><div id="mins" style="font-size:2rem;">00</div><p>mins</p></div>
+                    <div class="colon" style="font-size:2rem;color:#3d087b;">:</div>
+                    <div class="timer_box"><div id="secs" style="font-size:2rem;">00</div><p>secs</p></div>
+                    <div class="timer_box" ><div id="am-pm" style="font-size:2rem;">00</div></div>
+            </div>
+            <div id="clock_lower1"></div>
+            <div id="clock_lower2"></div>
+        </div>    
+        <div class="grid_box box3">
+            <div class="box3_container">
+                <div class="time_setr setr1">
+                    <img src="sun.PNG" class="box_icon"/>
+                    <label style="font-size:1.2rem;margin:0 2.5rem 0 0.6rem;color:#673ab7;letter-spacing:2px;"> Set wake up time</span>
+                    <select class="TimeSelector" id="wakeup_selector" style="margin:0 0 0 1.8rem;">
+                        <option value="0">Default</option>
+                        <option value="1">01 AM - 02AM</option>
+                        <option value="2">02 AM - 03AM</option>
+                        <option value="3">03 AM - 04AM</option>
+                        <option value="4">04 AM - 05AM</option>
+                        <option value="5">05 AM - 06AM</option>
+                        <option value="6">06 AM - 07AM</option>
+                        <option value="7">07 AM - 08AM</option>
+                        <option value="8">08 AM - 09AM</option>
+                        <option value="9">09 AM - 10AM</option>
+                        <option value="10">10 AM - 11AM</option>
+                        <option value="11">11 AM - 12PM</option>
+                        <option value="12">12 PM - 01PM</option>
+                        <option value="13">01 PM - 02PM</option>
+                        <option value="14">02 PM - 03PM</option>
+                        <option value="15">03 PM - 04PM</option>
+                        <option value="16">04 PM - 05PM</option>
+                        <option value="17">05 PM - 06PM</option>
+                        <option value="18">06 PM - 07PM</option>
+                        <option value="19">07 PM - 08PM</option>
+                        <option value="20">08 PM - 09PM</option>
+                        <option value="21">09 PM - 10PM</option>
+                        <option value="22">10 PM - 11PM</option>
+                        <option value="23">11 PM - 12AM</option>
+                        <option value="24">12 AM - 1AM</option>
+                    </select>
+                    <div class="vertical-line"></div>
+                </div>
+                
+                <div class="time_setr setr2"><img src="spoon.PNG" class="box_icon">
+                    <label style="font-size:1.2rem;margin:0 2rem 0 0;color:#673ab7;letter-spacing:2px"> Set lunch time</label>
+                    <select class="TimeSelector" id="lunch_selector" style="margin:0 0 0 2rem;">
+                        <option value="0">Default</option>
+                        <option value="1">01 AM - 02AM</option>
+                        <option value="2">02 AM - 03AM</option>
+                        <option value="3">03 AM - 04AM</option>
+                        <option value="4">04 AM - 05AM</option>
+                        <option value="5">05 AM - 06AM</option>
+                        <option value="6">06 AM - 07AM</option>
+                        <option value="7">07 AM - 08AM</option>
+                        <option value="8">08 AM - 09AM</option>
+                        <option value="9">09 AM - 10AM</option>
+                        <option value="10">10 AM - 11AM</option>
+                        <option value="11">11 AM - 12PM</option>
+                        <option value="12">12 PM - 01PM</option>
+                        <option value="13">01 PM - 02PM</option>
+                        <option value="14">02 PM - 03PM</option>
+                        <option value="15">03 PM - 04PM</option>
+                        <option value="16">04 PM - 05PM</option>
+                        <option value="17">05 PM - 06PM</option>
+                        <option value="18">06 PM - 07PM</option>
+                        <option value="19">07 PM - 08PM</option>
+                        <option value="20">08 PM - 09PM</option>
+                        <option value="21">09 PM - 10PM</option>
+                        <option value="22">10 PM - 11PM</option>
+                        <option value="23">11 PM - 12AM</option>
+                        <option value="24">12 AM - 1AM</option>
+                    </select>
+                    <div class="vertical-line"></div>
+                </div>
+                
+                <div class="time_setr setr3"><img src="zoozo.PNG" class="box_icon">
+                    <label style="font-size:1.2rem; margin:0 2rem 0 0.2rem;color:#673ab7;letter-spacing:2px;"> Set nap time</label>
+                    <select class="TimeSelector" id="nap_selector" style="margin:0 0 0 3.3rem;">
+                        <option value="0">Default</option>
+                        <option value="1">01 AM - 02AM</option>
+                        <option value="2">02 AM - 03AM</option>
+                        <option value="3">03 AM - 04AM</option>
+                        <option value="4">04 AM - 05AM</option>
+                        <option value="5">05 AM - 06AM</option>
+                        <option value="6">06 AM - 07AM</option>
+                        <option value="7">07 AM - 08AM</option>
+                        <option value="8">08 AM - 09AM</option>
+                        <option value="9">09 AM - 10AM</option>
+                        <option value="10">10 AM - 11AM</option>
+                        <option value="11">11 AM - 12PM</option>
+                        <option value="12">12 PM - 01PM</option>
+                        <option value="13">01 PM - 02PM</option>
+                        <option value="14">02 PM - 03PM</option>
+                        <option value="15">03 PM - 04PM</option>
+                        <option value="16">04 PM - 05PM</option>
+                        <option value="17">05 PM - 06PM</option>
+                        <option value="18">06 PM - 07PM</option>
+                        <option value="19">07 PM - 08PM</option>
+                        <option value="20">08 PM - 09PM</option>
+                        <option value="21">09 PM - 10PM</option>
+                        <option value="22">10 PM - 11PM</option>
+                        <option value="23">11 PM - 12AM</option>
+                        <option value="24">12 AM - 1AM</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="grid_box box4" id="image_greeting">
+            <P id="image_label1"></P>
+        </div>
+        <div class="grid_box box5" id="salutation"></div>
+        <div class="grid_box box6"></div>
+        <div class="grid_box box7">
+            <button id="seter_button" onclick="settime()">
+                SET TIME!!
+            </button>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <ul class="box_area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>
