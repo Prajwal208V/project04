@@ -68,9 +68,20 @@ function clock(){
     // console.log(nap_selector);
 }
 setInterval(clock,1000);
-function settime(){
 
-    document.getElementById("salutation");
+function makediv(){
+    var container=document.createElement("div");
+    container.className="box5";
+    // container.id="salutation";
+    document.getElementById("salutation").appendChild(container);
+}
+var count=0;
+
+function settime(){
+    if(count==0){
+        makediv();
+        count++;
+    }
     var W=document.getElementById("wakeup_selector").value;
     var L=document.getElementById("lunch_selector").value;
     var N=document.getElementById("nap_selector").value;
